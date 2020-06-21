@@ -5,14 +5,14 @@
 
 Для запуска на локальной машине необходимо:
 
-склонировать этот репозиторий
+  склонировать этот репозиторий
 
-перейти в папку репозиторием
+  перейти в папку репозиторием
 
-python -m venv venv
+  python -m venv venv
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
-python run.py
+  python run.py
 
 Необходимо зарегистрироваться, залогиниться и создать событие.

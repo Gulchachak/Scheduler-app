@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for event in events %}
+		<article class="media content-section">
+  			<div class="media-body">
+   			<div class="article-metadata">
+      			<a class="mr-1" href="#">{{ event.author.username }}</a>
+      	</div>
+          <p class="article-content">From: {{ event.start }}</p>
+    			<p class="article-content">To: {{ event.end }}</p>
+    			<h2><a class="article-title" href="{{ url_for('event', event_id=event.id) }}">Subject: {{ event.subject }}</a></h2>
+    			<p class="article-content">Description: {{ event.description }}</p>
+  			</div>
+		</article>
+	{% endfor %}
+{% endblock content %}
+

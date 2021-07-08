@@ -1,18 +1,17 @@
-В данном приложении реализован сервис для планирования событий.
+# Scheduler on Flask
 
-Это приложение использует Flask в качестве фреймворка для приложения, PostgreSQL для хранения данных, 
-ссылка на heroku с задеплоенным приложением (https://salty-wave-34957.herokuapp.com/)
+This is an example of **Flask** Scheduler web application that uses the **PostgreSQL** as a database. A running version of this app can be found on **Heroku** [(here)](https://salty-wave-34957.herokuapp.com/).
 
-Для запуска на локальной машине необходимо:
+### Running locally
 
-  склонировать этот репозиторий
+```
+ git clone https://github.com/Gulchachak/Scheduler-app
+ cd Scheduler-app
+ python -m venv venv
+ cd venv
+ venv/Scripts/activate
+ pip install -r requirements.txt
+ python run.py
+```
 
-  перейти в папку репозиторием
-
-  python -m venv venv
-
-  pip install -r requirements.txt
-
-  python run.py
-
-Необходимо зарегистрироваться, залогиниться и создать событие.
+Then visit http://localhost:5000/ to observe the app.
